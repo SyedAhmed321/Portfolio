@@ -1,7 +1,7 @@
 import Container from "../../components/layout/Container";
 import GlassCard from "../../components/ui/GlassCard";
-import AboutVisual from "./aboutvisual";
-import AboutScene from "../../components/three/aboutscene";
+import AboutVisual from "./AboutVisual";
+import AboutScene from "../../components/three/AboutScene";
 import { FaGraduationCap, FaCode, FaBullseye } from "react-icons/fa";
 
 const About = () => {

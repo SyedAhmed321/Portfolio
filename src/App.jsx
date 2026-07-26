@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import Loader from "./components/Loader";
+import Loader from "./components/Loader.jsx";
 
 import Navbar from "./components/layout/Navbar";
-import Hero from "./sections/Hero/Hero";
-import About from "./sections/About/About";
-import Skills from "./sections/Skills/Skills";
-import Projects from "./sections/Projects/Projects";
-import Journey from "./sections/Journey/Journey";
-import Achievements from "./sections/achievements/achievements";
-import BeyondCode from "./sections/beyondcode/beyondcode";
-import Contact from "./sections/Contact/Contact";
-import Footer from "./sections/Footer/Footer";
+import Hero from "./sections/hero/Hero";
+import About from "./sections/about/About";
+import Skills from "./sections/skills/Skills";
+import Projects from "./sections/projects/Projects";
+import Journey from "./sections/journey/Journey";
+import Achievements from "./sections/achievements/Achievements";
+import BeyondCode from "./sections/beyondcode/BeyondCode";
+import Contact from "./sections/contact/Contact";
+import Footer from "./sections/footer/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
