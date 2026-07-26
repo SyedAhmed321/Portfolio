@@ -15,9 +15,9 @@ export const projects = [
       "MongoDB Atlas with indexing and auto-expiry reservations",
     ],
     tech: ["ASP.NET Core", "React", "MongoDB", "JWT", "Azure", "Vercel"],
-    github: "#",
+    github: "https://github.com/SyedAhmed321/Event-And-Ticketing-Management-System",
     live: "#",
-    image: "/projects/event.png",
+    image: "/event.png",
   },
   {
     id: 2,
