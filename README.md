@@ -1,16 +1,134 @@
-# React + Vite
+# 🚀 Syed Ahmed Hassan | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio built to showcase my projects, technical skills, achievements, and journey as a Software Engineering student.
 
-Currently, two official plugins are available:
+Designed with a clean UI, smooth animations, and interactive 3D elements to provide an engaging user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+> Coming Soon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Modern and responsive design
+- Interactive 3D developer scene using React Three Fiber
+- Apple-inspired loading animation
+- Smooth page transitions with Framer Motion
+- Interactive project showcase
+- Timeline-based journey section
+- Skills categorized by technology
+- Achievements and certifications
+- Beyond Code section highlighting interests and activities
+- Contact section with resume download and social links
+- Fully optimized for desktop and mobile devices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- Tailwind CSS
+
+### Animations
+
+- Framer Motion
+
+### 3D
+
+- React Three Fiber
+- Drei
+- Three.js
+
+### Icons
+
+- Lucide React
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+├── sections/
+│   ├── Hero/
+│   ├── About/
+│   ├── Skills/
+│   ├── Projects/
+│   ├── Journey/
+│   ├── Achievements/
+│   ├── BeyondCode/
+│   ├── Contact/
+│   └── Footer/
+├── App.jsx
+└── main.jsx
+
+public/
+├── developer.glb
+└── Syed_Ahmed_Hassan_CV.pdf
+```
+
+## 🚀 Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/portfolio.git
+```
+
+Navigate into the project
+
+```bash
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Preview the production build
+
+```bash
+npm run preview
+```
+
+## 📄 Resume
+
+My latest resume can be downloaded directly from the portfolio or found in the `public` directory.
+
+## 📬 Contact
+
+- **Email:** your.email@example.com
+- **LinkedIn:** https://linkedin.com/in/your-profile
+- **GitHub:** https://github.com/YOUR_USERNAME
+
+## 📌 Future Improvements
+
+- Blog integration
+- Dark/Light theme toggle
+- Project filtering
+- Interactive command palette
+- Performance enhancements
+- Custom domain
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ If you like this project, consider giving it a star!
