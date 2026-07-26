@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-export default function Loader({ loading }) {
+function Loader({ loading }) {
   const messages = [
     "Building your experience...",
     "Loading featured projects...",
@@ -226,3 +226,5 @@ export default function Loader({ loading }) {
     </AnimatePresence>
   );
 }
+
+export default Loader;
