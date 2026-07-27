@@ -15,10 +15,10 @@ const stats = [
 
 const HeroStats = () => {
   return (
-    <div className="mt-12 flex flex-wrap gap-10">
+    <div className="mt-12 grid grid-cols-3 gap-4 sm:flex sm:flex-wrap sm:gap-10">
       {stats.map((stat) => (
         <div key={stat.label}>
-          <h3 className="text-3xl font-bold text-blue-400">
+          <h3 className="text-2xl font-bold text-blue-400 sm:text-3xl">
             {stat.value}
           </h3>
 

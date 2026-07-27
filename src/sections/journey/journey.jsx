@@ -43,18 +43,18 @@ const milestones = [
 
 const Journey = () => {
   return (
-    <section className="py-28">
+    <section className="py-20 md:py-28">
       <Container>
         <FadeInSection>
-          <div className="text-center mb-16">
+          <div className="mb-12 text-center md:mb-16">
             <p className="text-blue-400 font-medium">My Path</p>
-            <h2 className="text-4xl md:text-5xl font-bold mt-2">
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl md:text-5xl">
               Developer Journey
             </h2>
           </div>
 
           <div className="relative mx-auto max-w-6xl">
-            <div className="absolute left-6 top-0 h-full w-px bg-gradient-to-b from-blue-400 via-purple-400 to-cyan-400 md:left-1/2 md:-translate-x-1/2" />
+            <div className="absolute left-5 top-0 h-full w-px bg-gradient-to-b from-blue-400 via-purple-400 to-cyan-400 sm:left-6 md:left-1/2 md:-translate-x-1/2" />
 
             <div className="space-y-10">
               {milestones.map((item, index) => {
@@ -64,7 +64,7 @@ const Journey = () => {
                 return (
                   <div
                     key={item.year}
-                    className="relative grid grid-cols-1 items-center md:grid-cols-[1fr_96px_1fr] gap-6"
+                    className="relative grid grid-cols-1 items-center gap-6 pl-16 sm:pl-20 md:grid-cols-[1fr_96px_1fr] md:pl-0"
                   >
                     {/* LEFT SIDE */}
                     <div className={`${isLeft ? "md:pr-10" : "md:col-start-1 md:opacity-0"}`}>
@@ -84,7 +84,7 @@ const Journey = () => {
                     </div>
 
                     {/* CENTER DOT */}
-                    <div className="absolute left-6 top-6 flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[#070B16] shadow-lg md:static md:mx-auto md:left-auto md:top-auto">
+                    <div className="absolute left-5 top-6 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full border border-white/10 bg-[#070B16] shadow-lg sm:left-6 md:static md:mx-auto md:translate-x-0">
                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500/10 border border-blue-400/20">
                         <Icon className="text-lg text-blue-400" />
                       </div>

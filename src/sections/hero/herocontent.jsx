@@ -16,7 +16,7 @@ const HeroContent = () => {
                 Hello, I'm
             </p>
 
-            <h1 className="text-5xl md:text-7xl font-black leading-tight">
+            <h1 className="text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
                 <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
                     Ahmed Hassan
                 </span>
@@ -36,10 +36,10 @@ const HeroContent = () => {
                 wrapper="h2"
                 speed={40}
                 repeat={Infinity}
-                className="mt-5 text-2xl md:text-3xl font-semibold text-slate-300"
+                className="mt-5 block min-h-16 text-xl font-semibold text-slate-300 sm:min-h-10 sm:text-2xl md:text-3xl"
             />
 
-            <p className="mt-8 max-w-xl text-lg leading-8 text-slate-400">
+            <p className="mt-6 max-w-xl text-base leading-8 text-slate-400 sm:mt-8 sm:text-lg">
                 I build scalable backend systems, modern web applications,
                 and seamless digital experiences using{" "}
                 <span className="text-white font-medium">
@@ -53,7 +53,7 @@ const HeroContent = () => {
                 </span>, and cloud technologies.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <Button href="#projects">
                     Explore My Work →
                 </Button>

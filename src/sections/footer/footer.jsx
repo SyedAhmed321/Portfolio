@@ -9,7 +9,7 @@ const Footer = () => {
             © 2026 Ahmed Hassan. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-6 text-sm text-slate-400">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-400">
             <a
               href="https://linkedin.com/in/syedahmed321/"
               target="_blank"

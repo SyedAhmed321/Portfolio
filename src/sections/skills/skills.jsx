@@ -6,27 +6,27 @@ import FadeInSection from "../../components/ui/FadeInSection";
 const Skills = () => {
   return (
     <FadeInSection>
-    <section id="skills" className="py-28">
+    <section id="skills" className="py-20 md:py-28">
       <Container>
 
-        <div className="text-center mb-16">
+        <div className="mb-12 text-center md:mb-16">
           <p className="text-blue-400 font-medium">
             What I Work With
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold mt-2">
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl md:text-5xl">
             Technical Skills
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
 
           {skillCategories.map((category) => (
             <GlassCard
               key={category.title}
-              className="p-8"
+              className="p-6 md:p-8"
             >
-              <h3 className="text-2xl font-semibold mb-6">
+              <h3 className="mb-6 text-xl font-semibold sm:text-2xl">
                 {category.title}
               </h3>
 

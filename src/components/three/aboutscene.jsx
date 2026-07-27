@@ -5,17 +5,13 @@ import {
     Float,
     ContactShadows,
     OrbitControls,
-    Stars,
 } from "@react-three/drei";
-
-import { EffectComposer, Bloom } from "@react-three/postprocessing";
-
 
 import Developer from "./Developer";
 
 export default function AboutScene() {
     return (
-        <div className="h-[650px] w-full">
+        <div className="h-[360px] w-full sm:h-[480px] lg:h-[650px]">
             <Canvas camera={{
                 position: [-2.8, 3.2, 10],
                 fov: 30,

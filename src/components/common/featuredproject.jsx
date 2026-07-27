@@ -5,14 +5,14 @@ const FeaturedProject = ({ project }) => {
   return (
     <GlassCard className="overflow-hidden">
       <div className="grid lg:grid-cols-2">
-        <div className="min-h-[320px] bg-slate-800 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-white/10">
+        <div className="flex min-h-56 items-center justify-center border-b border-white/10 bg-slate-800 px-6 text-center sm:min-h-[320px] lg:border-b-0 lg:border-r">
           <span className="text-slate-500">Featured Project Screenshot</span>
         </div>
 
-        <div className="p-8">
+        <div className="p-6 md:p-8">
           <p className="text-blue-400 font-medium mb-3">Featured Project</p>
 
-          <h3 className="text-3xl font-bold">{project.title}</h3>
+          <h3 className="text-2xl font-bold leading-tight sm:text-3xl">{project.title}</h3>
 
           <p className="mt-4 text-slate-400 leading-7">
             {project.description}
@@ -39,7 +39,7 @@ const FeaturedProject = ({ project }) => {
             ))}
           </div>
 
-          <div className="flex gap-6 mt-8">
+          <div className="mt-8 flex flex-wrap gap-6">
             <a
               href={project.github}
               className="flex items-center gap-2 hover:text-blue-400 transition"

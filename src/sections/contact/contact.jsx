@@ -37,23 +37,23 @@ const contactLinks = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-28">
+    <section id="contact" className="py-20 md:py-28">
       <Container>
         <FadeInSection>
-          <div className="text-center mb-16">
+          <div className="mb-12 text-center md:mb-16">
             <p className="text-blue-400 font-medium">Let’s Connect</p>
-            <h2 className="text-4xl md:text-5xl font-bold mt-2">
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl md:text-5xl">
               Contact
             </h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 items-start">
-            <GlassCard className="p-8 md:p-10">
+            <GlassCard className="p-6 md:p-10">
               <p className="text-blue-400 font-medium mb-3">
                 Available for opportunities
               </p>
 
-              <h3 className="text-3xl font-bold leading-tight">
+              <h3 className="text-2xl font-bold leading-tight sm:text-3xl">
                 Let’s build something meaningful together.
               </h3>
 
@@ -78,15 +78,15 @@ const Contact = () => {
                       rel={
                         item.href.startsWith("http") ? "noreferrer" : undefined
                       }
-                      className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-4 transition-all duration-300 hover:border-blue-400/30 hover:bg-white/10"
+                      className="flex min-w-0 items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 transition-all duration-300 hover:border-blue-400/30 hover:bg-white/10 sm:px-5"
                     >
                       <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-400/20 bg-blue-500/10">
                         <Icon className="text-blue-400" />
                       </div>
 
-                      <div>
+                      <div className="min-w-0">
                         <p className="text-sm text-slate-400">{item.title}</p>
-                        <p className="text-white font-medium">{item.value}</p>
+                        <p className="break-words font-medium text-white">{item.value}</p>
                       </div>
                     </a>
                   );
@@ -94,7 +94,7 @@ const Contact = () => {
               </div>
             </GlassCard>
 
-            <GlassCard className="p-8 md:p-10">
+            <GlassCard className="p-6 md:p-10">
               <h3 className="text-2xl font-semibold">
                 Send a message
               </h3>
@@ -147,7 +147,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-3 rounded-2xl bg-blue-600 px-6 py-3 font-medium text-white transition-all duration-300 hover:bg-blue-500 hover:scale-105 cursor-pointer"
+                  className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-2xl bg-blue-600 px-6 py-3 font-medium text-white transition-all duration-300 hover:bg-blue-500 hover:scale-105 cursor-pointer sm:w-auto"
                 >
                   <FaEnvelope />
                   Send Message

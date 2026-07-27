@@ -10,8 +10,8 @@ const Button = ({ children, href, variant = "primary" }) => {
     <a
       href={href}
       className={`
-        inline-flex items-center justify-center
-        rounded-2xl px-6 py-3 font-medium
+        inline-flex min-h-12 items-center justify-center text-center
+        rounded-2xl px-5 py-3 font-medium sm:px-6
         transition-all duration-300
         hover:scale-105 active:scale-95
         cursor-pointer select-none

@@ -13,6 +13,7 @@ const GlassCard = ({ children, className = "" }) => {
       hover:-translate-y-2
       hover:border-blue-400/30
       hover:shadow-[0_0_40px_rgba(59,130,246,0.15)]
+      min-w-0
       ${className}
       `}
     >

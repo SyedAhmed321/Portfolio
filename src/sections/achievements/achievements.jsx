@@ -33,22 +33,22 @@ const achievements = [
 
 const Achievements = () => {
   return (
-    <section className="py-28">
+    <section className="py-20 md:py-28">
       <Container>
         <FadeInSection>
-          <div className="text-center mb-16">
+          <div className="mb-12 text-center md:mb-16">
             <p className="text-blue-400 font-medium">Highlights</p>
-            <h2 className="text-4xl md:text-5xl font-bold mt-2">
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl md:text-5xl">
               Achievements
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-4">
             {achievements.map((item) => {
               const Icon = item.icon;
 
               return (
-                <GlassCard key={item.title} className="p-8 text-center">
+                <GlassCard key={item.title} className="p-6 text-center md:p-8">
                   <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl border border-blue-400/20 bg-blue-500/10">
                     <Icon className="text-2xl text-blue-400" />
                   </div>

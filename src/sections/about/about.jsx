@@ -1,6 +1,5 @@
 import Container from "../../components/layout/Container";
 import GlassCard from "../../components/ui/GlassCard";
-import AboutVisual from "./AboutVisual";
 import AboutScene from "../../components/three/AboutScene";
 import { FaGraduationCap, FaCode, FaBullseye } from "react-icons/fa";
 
@@ -8,27 +7,27 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-28"
+      className="py-20 md:py-28"
     >
       <Container>
 
-        <div className="text-center mb-16">
+        <div className="mb-12 text-center md:mb-16">
 
           <p className="text-blue-400 font-medium">
             Get To Know Me
           </p>
 
-          <h2 className="mt-2 text-4xl md:text-5xl font-bold">
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl md:text-5xl">
             About Me
           </h2>
 
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
 
           {/* Left Side */}
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl">
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl">
             <AboutScene />
           </div>
 
@@ -36,7 +35,7 @@ const About = () => {
 
           <div>
 
-            <h3 className="text-3xl font-bold mb-6">
+            <h3 className="mb-6 text-2xl font-bold leading-tight sm:text-3xl">
               Passionate About Building Software That Matters
             </h3>
 
@@ -61,9 +60,9 @@ const About = () => {
 
         {/* Cards */}
 
-        <div className="grid md:grid-cols-3 gap-8 mt-20">
+        <div className="mt-16 grid gap-6 md:mt-20 md:grid-cols-3 md:gap-8">
 
-          <GlassCard className="p-8">
+          <GlassCard className="p-6 md:p-8">
 
             <FaGraduationCap className="text-4xl text-blue-400 mb-5" />
 
@@ -81,7 +80,7 @@ const About = () => {
 
           </GlassCard>
 
-          <GlassCard className="p-8">
+          <GlassCard className="p-6 md:p-8">
 
             <FaCode className="text-4xl text-cyan-400 mb-5" />
 
@@ -96,7 +95,7 @@ const About = () => {
 
           </GlassCard>
 
-          <GlassCard className="p-8">
+          <GlassCard className="p-6 md:p-8">
 
             <FaBullseye className="text-4xl text-purple-400 mb-5" />
 

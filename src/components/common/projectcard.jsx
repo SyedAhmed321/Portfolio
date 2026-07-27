@@ -5,13 +5,13 @@ const ProjectCard = ({ project }) => {
   return (
     <GlassCard className="overflow-hidden group">
 
-      <div className="h-56 bg-slate-800 flex items-center justify-center border-b border-white/10">
+      <div className="flex h-48 items-center justify-center border-b border-white/10 bg-slate-800 px-6 text-center sm:h-56">
         <span className="text-slate-500">Project Screenshot</span>
       </div>
 
-      <div className="p-6">
+      <div className="p-5 sm:p-6">
 
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-xl font-bold leading-tight sm:text-2xl">
           {project.title}
         </h3>
 
@@ -41,7 +41,7 @@ const ProjectCard = ({ project }) => {
 
         </div>
 
-        <div className="flex gap-6 mt-8">
+        <div className="mt-8 flex flex-wrap gap-6">
 
           <a
             href={project.github}

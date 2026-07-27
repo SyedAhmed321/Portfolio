@@ -1,13 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-function Loader({ loading }) {
-  const messages = [
-    "Building your experience...",
-    "Loading featured projects...",
-    "Almost ready..."
-  ];
+const messages = [
+  "Building your experience...",
+  "Loading featured projects...",
+  "Almost ready..."
+];
 
+function Loader({ loading }) {
   const [messageIndex, setMessageIndex] = useState(0);
   const [expanded, setExpanded] = useState(false);
 
@@ -80,8 +80,8 @@ function Loader({ loading }) {
               borderRadius: 999,
             }}
             animate={{
-              width: expanded ? 400 : 88,
-              height: expanded ? 250 : 36,
+              width: expanded ? "min(400px, calc(100vw - 32px))" : 88,
+              height: expanded ? "min(250px, calc(100vh - 32px))" : 36,
               borderRadius: expanded ? 34 : 999,
             }}
             transition={{
@@ -128,7 +128,7 @@ function Loader({ loading }) {
                 transition={{
                   delay: 0.25,
                 }}
-                className="relative z-10 flex h-full flex-col items-center justify-center px-10"
+                className="relative z-10 flex h-full flex-col items-center justify-center px-6 sm:px-10"
               >
                 <motion.div
                   initial={{ scale: 0.9 }}
@@ -145,11 +145,11 @@ function Loader({ loading }) {
                   AH
                 </motion.div>
 
-                <h1 className="text-[32px] font-medium tracking-tight text-white">
+                <h1 className="text-center text-2xl font-medium tracking-tight text-white sm:text-[32px]">
                   Ahmed Hassan
                 </h1>
 
-                <p className="mt-1 text-xs uppercase tracking-[0.35em] text-slate-400">
+                <p className="mt-1 text-center text-[10px] uppercase tracking-[0.28em] text-slate-400 sm:text-xs sm:tracking-[0.35em]">
                   Software Engineer
                 </p>
 
@@ -166,14 +166,14 @@ function Loader({ loading }) {
                   transition={{
                     duration: 0.35,
                   }}
-                  className="mt-8 h-5 text-sm text-slate-300"
+                  className="mt-8 h-5 text-center text-sm text-slate-300"
                 >
                   {messages[messageIndex]}
                 </motion.p>
 
                 {/* Progress */}
 
-                <div className="relative mt-6 h-[4px] w-72 overflow-hidden rounded-full bg-white/10">
+                <div className="relative mt-6 h-[4px] w-full max-w-72 overflow-hidden rounded-full bg-white/10">
                   <motion.div
                     initial={{
                       width: 0,

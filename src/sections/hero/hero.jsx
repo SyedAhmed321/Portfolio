@@ -5,12 +5,12 @@ import HeroWorkspace from "./HeroWorkspace";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative flex min-h-screen items-center overflow-hidden pt-28 pb-16 lg:py-0">
 
       <HeroBackground />
 
       <Container className="relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
           <HeroContent />
 
