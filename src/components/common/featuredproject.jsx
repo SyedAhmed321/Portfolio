@@ -5,8 +5,18 @@ const FeaturedProject = ({ project }) => {
   return (
     <GlassCard className="overflow-hidden">
       <div className="grid lg:grid-cols-2">
-        <div className="flex min-h-56 items-center justify-center border-b border-white/10 bg-slate-800 px-6 text-center sm:min-h-[320px] lg:border-b-0 lg:border-r">
-          <span className="text-slate-500">Featured Project Screenshot</span>
+        <div className="relative flex min-h-56 items-center justify-center overflow-hidden border-b border-white/10 bg-slate-800 text-center sm:min-h-[320px] lg:border-b-0 lg:border-r">
+          {project.image ? (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="absolute inset-0 h-full w-full object-cover object-center"
+            />
+          ) : (
+            <span className="px-6 text-slate-500">
+              Featured Project Screenshot
+            </span>
+          )}
         </div>
 
         <div className="p-6 md:p-8">
