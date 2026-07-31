@@ -1,6 +1,9 @@
 import Container from "../../components/layout/Container";
 import GlassCard from "../../components/ui/GlassCard";
-import AboutScene from "../../components/three/AboutScene";
+import { lazy, Suspense } from "react";
+
+const AboutScene = lazy(() => import("../../components/three/AboutScene"));
+
 import { FaGraduationCap, FaCode, FaBullseye } from "react-icons/fa";
 
 const About = () => {
@@ -28,7 +31,14 @@ const About = () => {
           {/* Left Side */}
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl">
-            <AboutScene />
+            <Suspense
+              fallback={
+                <div className="h-[650px] w-full animate-pulse rounded-3xl bg-slate-900/30" />
+              }
+            >
+              <AboutScene />
+            </Suspense>
+            
           </div>
 
           {/* Right Side */}

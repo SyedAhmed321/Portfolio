@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 
-import Loader from "./components/Loader.jsx";
+import Loader from "./components/Loader";
 
 import Navbar from "./components/layout/Navbar";
 import Hero from "./sections/hero/Hero";
-import About from "./sections/about/About";
+
+const About = lazy(() => import("./sections/about/About"));
+
 import Skills from "./sections/skills/Skills";
 import Projects from "./sections/projects/Projects";
 import Journey from "./sections/journey/Journey";
@@ -20,7 +22,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1500); // instead of 3000
 
     return () => clearTimeout(timer);
   }, []);
@@ -34,13 +36,18 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            duration: 0.8,
+            duration: 0.5,
             ease: [0.22, 1, 0.36, 1],
           }}
         >
           <Navbar />
+
           <Hero />
-          <About />
+
+          <Suspense fallback={null}>
+            <About />
+          </Suspense>
+
           <Skills />
           <Projects />
           <Journey />
