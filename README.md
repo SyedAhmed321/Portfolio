@@ -6,7 +6,7 @@ Designed with a clean UI, smooth animations, and interactive 3D elements to prov
 
 ## 🌐 Live Demo
 
-> Coming Soon
+> (https://syedahmed-portfolio.netlify.app/)
 
 ## ✨ Features
 
