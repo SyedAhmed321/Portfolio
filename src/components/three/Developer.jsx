@@ -134,6 +134,5 @@ export function Model(props) {
     )
 }
 
-useGLTF.preload('/developer.glb')
 
 export default Model;
