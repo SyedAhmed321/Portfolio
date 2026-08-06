@@ -7,7 +7,7 @@ import {
     OrbitControls,
 } from "@react-three/drei";
 
-import {lazy} from "react";
+import { lazy } from "react";
 
 const Developer = lazy(() => import("./Developer"));
 
@@ -70,12 +70,10 @@ export default function AboutScene() {
                             />
                         </mesh>
                         <group rotation={[0, -0.25, 0]}>
-                            <Suspense fallback={null}>
                             <Developer
                                 scale={0.45}
                                 position={[0, -2.2, 0]}
                             />
-                            </Suspense>
                         </group>
 
                     </Float>
